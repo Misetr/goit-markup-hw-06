@@ -593,6 +593,7 @@ img {
 }
 .subscribe-form {
   display: flex;
+  gap: 24px;
 }
 .subscribe-in {
   width: 264px;
@@ -629,7 +630,7 @@ img {
   margin-left: 24px;
 }
 .subscribe-svg {
-  padding-left: 16px;
+  margin-left: 16px;
   box-sizing: content-box;
 }
 
