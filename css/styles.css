@@ -227,7 +227,6 @@ img {
   background: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -248,6 +247,10 @@ img {
   transform: translate(-50%, -50%);
   min-height: 584px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+}
+.modal-list {
+  gap: 8px;
 }
 
 .modal-content {
@@ -315,7 +318,8 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.person-svg:focus {
+
+.modal-input:focus + .person-svg {
   fill: #4d5ae5;
 }
 .coment-div {
@@ -347,6 +351,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-rust);
+}
+.privacy-input {
+  appearance: none;
+}
+.privacy-input:checked + .privacy-label .privacy-span {
+  fill: var(--color-cloud);
+  background-color: var(--color-hover-haeder);
+}
+.privacy-input:checked + .privacy-svg {
+  fill: transparent;
 }
 .close {
   color: #aaa;
@@ -382,11 +396,11 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.modal-input.person-svg:checked + .privacy-span {
+/* .modal-input.person-svg:checked + .privacy-span {
   background-color: var(--color-hover-haeder);
   border: none;
   fill: var(--color-cloud);
-}
+} */
 .privacy-link {
   color: var(--color-secondary);
 }
@@ -403,7 +417,6 @@ img {
   border-radius: 4px;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  align-items: center;
   margin-left: 119px;
 }
 .design {
