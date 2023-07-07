@@ -358,6 +358,7 @@ img {
 .privacy-input:checked + .privacy-label .privacy-span {
   fill: var(--color-cloud);
   background-color: var(--color-hover-haeder);
+  border: none;
 }
 .privacy-input:checked + .privacy-svg {
   fill: transparent;
